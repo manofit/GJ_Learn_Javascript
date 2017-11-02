@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+请输入您的名字:<input type="text" id="demo" onchange="myFun()">
+<p>当你离开输入框后，函数将被触发，将小写字母转为大写字母。</p>
+
+<script>
+    function myFun() {
+        var x=document.getElementById("demo");
+        x.value=x.value.toUpperCase();
+    }
+</script>
+
+</body>
+</html>

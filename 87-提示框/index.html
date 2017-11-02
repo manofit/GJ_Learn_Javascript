@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button type="button" onclick="myFun()">点击输入姓名</button>
+<p id="demo"></p>
+<script>
+    function myFun() {
+        var x=prompt("请输入姓名","chulinfen");
+        if(x!==null&&x!==""){
+         document.getElementById("demo").innerHTML=x;
+        }
+    }
+</script>
+
+</body>
+</html>

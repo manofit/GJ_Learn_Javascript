@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<p>在 HTML 中, 所有全局变量都属于 window 对象。</p>
+
+<p id="demo"></p>
+
+<script>
+    myFunction();
+    document.getElementById("demo").innerHTML="我可以显示"+window.carName;
+    function myFunction() {
+        carName="audi";
+    }
+</script>
+
+</body>
+</html>

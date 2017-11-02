@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<p>判断年龄是否已到18岁</p>
+年龄：<input id="age" value="18">
+<button type="button" onclick="myFunction()">点击</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        var age=document.getElementById("age").value;
+        var votoage=(age<18)?"年龄未到":"年龄已到";
+        document.getElementById("demo").innerHTML=votoage;
+    }
+</script>
+
+</body>
+</html>

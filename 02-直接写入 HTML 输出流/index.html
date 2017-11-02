@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<p>js可以直接写入html输出流</p>
+
+<script>
+    document.write("<h1>这是一个段落</h1>");
+    document.write("<p>这是一个段落</p>");
+</script>
+
+<p>
+    您只能在html输出流中使用document.write，如果您在文档已经加载后使用它（比如在函数中），会覆盖整个文档。
+</p>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>该例使用了addEventListener()方法在按钮中添加点击事件</p>
+<button id="btn" type="button">点击</button>
+<p id="demo"></p>
+<script>
+    document.getElementById("btn").addEventListener("click",diaplayDate);
+    function diaplayDate() {
+        document.getElementById("demo").innerHTML=Date();
+    }
+
+    /*
+    document.getElementById("btn").addEventListener("click",function () {
+        document.getElementById("demo").innerHTML=Date();
+    });
+    */
+</script>
+
+</body>
+</html>

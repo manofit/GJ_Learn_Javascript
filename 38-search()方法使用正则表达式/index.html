@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="demo" type="button" onclick="myFunction()">点击</button>
+<script>
+    function myFunction() {
+        var x="visit w3cschool";
+        var n=x.search(/w3cschool/i);//在x中搜索w3cschool，并且不区分大小写。
+        document.getElementById("demo").innerHTML=n;
+    }
+</script>
+
+</body>
+</html>

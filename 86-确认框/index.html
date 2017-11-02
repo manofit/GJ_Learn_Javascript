@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button type="button" onclick="myFunction()">点击按钮</button>
+<p id="demo"></p>
+<script>
+    var confir=confirm("继续退出此页面？");
+    if(confir==true){
+        document.getElementById("demo").innerHTML="你点击了确认";
+    }
+    else {
+        document.getElementById("demo").innerHTML="你点击了取消按钮";
+    }
+</script>
+
+</body>
+</html>

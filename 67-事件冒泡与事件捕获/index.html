@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            background-color: aqua;
+            border: 1px solid;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="myDiv">
+    <p id="myP">点击段落，我是冒泡。</p>
+</div><br>
+<div id="myDiv2">
+    <p id="myP2">点击事件，我是捕获。</p>
+</div>
+
+<script>
+    document.getElementById("myP").addEventListener("click",function () {
+        alert("点击了p元素");
+    },false);
+    document.getElementById("myDiv").addEventListener("click",function () {
+        alert("点击了div元素");
+    },false);
+    document.getElementById("myP2").addEventListener("click",function () {
+        alert("点击了p2元素");
+    },true);
+    document.getElementById("myDiv2").addEventListener("click",function () {
+        alert("点击了div2元素");
+    },true);
+</script>
+
+</body>
+</html>

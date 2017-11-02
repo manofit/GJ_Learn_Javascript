@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="checkCookies()">
+
+<script>
+    function setCookies(cname,cvalue,exdays) {
+        var d=new Date();
+        d.setTime(d.getTime()+(exdays*24*60*60*1000));
+        var expires="expires="+d.toUTCString();
+        document.cookie=cname+"="+cvalue+"; "+expires;
+    }
+    function getCookies(name) {
+        var name=cname+"=";
+        var ca=document.cookie.split(";");
+        for(var i=0;i<ca.length;i++){
+            var c=ca[i].trim();
+            if(c.indexOf(name)==0){
+                return c.substring(name.length,c.length);
+            }
+        }
+        return "";
+    }
+    function checkCookies() {
+        var user=getCookies("username");
+        if(user!=""){
+            alert("welcome again "+user);
+        }
+        else {
+            user=prompt("please enter your name: ","");
+            if(user!=""&&user!=null){
+                setCookies("username",user,30);
+            }
+        }
+    }
+</script>
+
+
+</body>
+</html>

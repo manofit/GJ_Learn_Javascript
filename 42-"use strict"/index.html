@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function f() {
+            return !this;
+        }//返回false,因为this指向全局对象，!this就是false。
+
+        function f2() {
+            "use strict";
+            return !this;
+        }//返回true，在严格模式下，this的值为undefined，所以!this为true。
+
+        function f3() {
+            "use strict";
+            this.a=1;
+        }
+        f3();//报错，this未定义。在析构函数中，如果忘了加new,this不再指向全局对象，而是报错。
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<p>在函数内使用未声明的变量（未使用var），该变量将作为全局变量</p>
+
+<p id="demo"></p>
+
+<script>
+    myFunction();
+    document.getElementById("demo").innerHTML="我可以显示"+carName;
+    function myFunction() {
+        carName="audi";
+    }
+</script>
+
+</body>
+</html>

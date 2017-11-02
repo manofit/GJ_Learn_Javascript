@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>一个数字除以一个字符串不是一个数字</p>
+<p>一个数字除以一个字符串数字是一个数字</p>
+<p id="demo"></p>
+<script>
+    var x=1000/"apple";
+    var y=1000/"1000";
+    document.getElementById("demo").innerHTML=isNaN(x)+"<br>"+isNaN(y);
+</script>
+
+</body>
+</html>

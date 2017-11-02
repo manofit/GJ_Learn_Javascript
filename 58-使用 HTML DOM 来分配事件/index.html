@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="btn" type="button">点击</button>
+<p id="demo"></p>
+<script>
+    document.getElementById("btn").onclick=function () {
+        myFun()
+    };
+    function myFun() {
+        document.getElementById("demo").innerHTML=Date();
+    }
+</script>
+
+
+</body>
+</html>

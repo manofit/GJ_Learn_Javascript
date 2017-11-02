@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function validateForm() {
+            var x=document.forms["myForm"]["fname"].value;
+            if(x==null||x==""){
+                alert("姓名必须填写");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<form name="myForm" action="demo-form.php" onsubmit="return validateForm()" method="post">
+    姓：<input type="text" name="fname">
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

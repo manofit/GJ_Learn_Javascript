@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="btn">点击</button>
+<p id="demo"></p>
+<script>
+    var x=document.getElementById("btn");
+    x.addEventListener("mouseover",myFun1);
+    x.addEventListener("mouseout",myFun2);
+    x.addEventListener("click",myFun3);
+    function myFun1() {
+        document.getElementById("demo").innerHTML += "over <br>";
+    }
+    function myFun2() {
+        document.getElementById("demo").innerHTML += "out <br>";
+    }
+    function myFun3() {
+        document.getElementById("demo").innerHTML += "click <br>";
+    }
+
+</script>
+
+</body>
+</html>

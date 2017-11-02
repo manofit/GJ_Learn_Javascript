@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<script>
+    function myFun() {
+        var max=0;
+        for(var i=0;i<arguments.length;i++){
+            if(arguments[i]>max){
+                max=arguments[i];
+            }
+
+        }
+        return max;
+    }
+    document.getElementById("demo").innerHTML=myFun(1,2,3,4);
+</script>
+
+</body>
+</html>

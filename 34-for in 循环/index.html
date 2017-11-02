@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<p>点击下面的按钮，循环遍历对象person的属性</p>
+<button type="button" onclick="myFunction()">点击</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        var x;
+        var txt="";
+        var person={fname:"gao",lname:"jun",age:24};
+        for(x in person)
+        {
+            txt=txt+person[x];
+        }
+        document.getElementById("demo").innerHTML=txt;
+    }
+
+</script>
+
+</body>
+</html>

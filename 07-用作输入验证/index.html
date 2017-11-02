@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script>
+        function myFunction() {
+            var x=document.getElementById("demo").value;
+            if(x==""||isNaN(x))
+            {
+                alert("不是数字");
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>js常被用来作为用户的输入验证</h1>
+
+<p>输入数字</p>
+
+<input id="demo" type="text">
+
+<button type="button" onclick="myFunction()">点击</button>
+
+</body>
+</html>

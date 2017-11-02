@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function myFun1(obj) {
+            obj.innerHTML="release me";
+        }
+        function myFun2(obj) {
+            obj.innerHTML="mouse up";
+        }
+        function myFun3(obj) {
+            obj.innerHTML="完成";
+        }
+    </script>
+</head>
+<body>
+
+<div onmousedown="myFun1(this)" onmouseup="myFun2(this)" onclick="myFun3(this)" style="background-color: aqua;width: 120px;height: 100px;padding: 4px">
+    mouse down
+</div>
+
+</body>
+</html>

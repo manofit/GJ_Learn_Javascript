@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function person(firstName, lastName, age) {
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.age=age;
+        this.changeName=changeName;
+        function changeName(name) {
+            this.lastName=name;
+        }
+    }
+    myWife=new person("chu","linfen","24");
+    myWife.changeName("baobei");
+    document.write(myWife.lastName);
+</script>
+
+</body>
+</html>

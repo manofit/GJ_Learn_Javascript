@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="btn">点击</button>
+<p id="demo"></p>
+<script>
+    var p1=5;
+    var p2=7;
+    document.getElementById("btn").addEventListener("click",function () {
+        myFunction(p1,p2);
+    });
+    function myFunction(a,b) {
+        var result=a * b;
+        document.getElementById("demo").innerHTML=result;
+    }
+
+</script>
+
+</body>
+</html>

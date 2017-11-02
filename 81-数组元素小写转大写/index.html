@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="myFunction()">点击</button>
+<p id="demo"></p>
+<script>
+    Array.prototype.myUcase=function () {
+        for(var i=0;i<this.length;i++){
+            this[i]=this[i].toUpperCase();
+        }
+    }
+    function myFunction() {
+        var fruits=["apple","bnanan","orange"];
+        fruits.myUcase();
+        document.getElementById("demo").innerHTML=fruits;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    var person={
+        firstName:"gao",
+        lastName:"jun",
+        id:5566,
+        fullName:function () {
+            return this.firstName + " " + this.lastName;
+        }
+    }
+    document.getElementById("demo").innerHTML=person.fullName();
+    document.getElementById("demo").innerHTML=person.fullName;//访问 person 对象的 fullName 属性，它将作为一个定义函数的字符串返回
+</script>
+
+</body>
+</html>

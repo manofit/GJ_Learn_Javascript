@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var text = '{"employees":[' +
+                '{"firstName":"John","lastName":"Doe" },' +
+                '{"firstName":"Anna","lastName":"Smith" },' +
+                '{"firstName":"Peter","lastName":"Jones" }]}';
+        obj = JSON.parse(text);//JSON转JS
+        //JSON.stringify();JS转JSON
+        document.getElementById("demo").innerHTML =
+                obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    </script>
+</head>
+<body>
+
+<h2>为 JSON 字符串创建对象</h2>
+<p id="demo"></p>
+
+</body>
+</html>

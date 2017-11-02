@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button type="button" onclick="myFun1()">点击</button>
+<button type="button" onclick="myFun2()">点击我停止</button>
+<script>
+    var x;
+    function myFun1() {
+        x=setTimeout(function () {
+            alert("hello")
+        },3000);
+    }
+    function myFun2() {
+        clearTimeout(x);
+    }
+
+</script>
+
+</body>
+</html>

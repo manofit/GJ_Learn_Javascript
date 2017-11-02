@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="demo">单击按钮显示今天星期几</p>
+<button onclick="myFunction()">点我</button>
+<script>
+    function myFunction() {
+        var d=new Date();
+        var weekday=new Array(7);
+        weekday[0]="周日";
+        weekday[1]="周一";
+        weekday[2]="周二";
+        weekday[3]="周三";
+        weekday[4]="周四";
+        weekday[5]="周五";
+        weekday[6]="周六";
+        document.getElementById("demo").innerHTML=weekday[d.getDay()];
+    }
+</script>
+
+</body>
+</html>

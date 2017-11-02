@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function validateForm() {
+            var x=document.forms["myForm"]["email"].value;
+            var atpos=x.indexOf("@");
+            var dotpos=x.lastIndexOf(".");
+            if(atpos<1||dotpos<atpos+2||dotpos+2>x.length){
+                alert("不是一个合法的email");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<form name="myForm" onsubmit="validateForm()" action="demo-form.php" method="post">
+    email：<input type="text" name="email">
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>

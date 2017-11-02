@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>String() 与 toString() 方法都可以将数字转化为字符串</p>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+    var x=123;
+    document.getElementById("demo").innerHTML=String(x)+"<br>"+String(100+23);
+    document.getElementById("demo2").innerHTML=x.toString()+"<br>"+(100+23).toString();
+
+    document.getElementById("demo3").innerHTML=String(false)+String(true);
+    document.getElementById("demo4").innerHTML=false.toString()+true.toString();
+
+    document.getElementById("demo5").innerHTML=String(Date());
+    document.getElementById("demo6").innerHTML=Date().toString();
+</script>
+
+</body>
+</html>
